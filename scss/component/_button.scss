@@ -1,0 +1,17 @@
+.btn {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.03em;
+    padding: 13px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn--red{
+    color: $btn-txt-color;
+    background-color: $btn-primary-color;
+    margin: 0px auto;
+}
