@@ -14,4 +14,12 @@
     color: $btn-txt-color;
     background-color: $btn-primary-color;
     margin: 0px auto;
+    transition: all 1s ease-in-out;
+    &:hover{
+        background-color: $btn-txt-color;
+        color: $btn-primary-color;
+    }
 }
+
+
+

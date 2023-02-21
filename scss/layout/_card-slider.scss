@@ -1,0 +1,43 @@
+//card//
+.card-slider {
+    display: flex;
+    gap: 38px;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    margin-top: -74px;
+
+    // max-width: 989px;
+    // width: 100%;
+    // margin: -74px auto 0px auto;
+    @include absCenter(-74px, auto, 0px, auto);
+}
+
+.arrow {
+    display: flex;
+    padding-top: 50px;
+    // max-width: 989px;
+    // width: 100%;
+    // margin: 0px auto 0px auto;
+    @include absCenter(0px, auto, 0px, auto);
+
+    &-left:hover {
+        cursor: pointer;
+        background-color: #0E6FFF;
+    }
+
+    &-right {
+        margin-left: 25px;
+        
+        &:hover {
+            cursor: pointer;
+            background-color: #0E6FFF;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #0E6FFF;
+            }
+        }
+    }
+
+}

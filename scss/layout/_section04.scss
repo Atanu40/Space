@@ -1,0 +1,52 @@
+//section 04
+.section4-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 69px;
+    padding: 55px 0px;
+    margin: 21px 0px;
+
+    // max-width: 989px;
+    // width: 100%;
+    // margin: 0px auto;
+    @include absCenter(43px, auto, 0px, auto);
+
+    &__img {
+        max-height: 544px;
+        height: 100%;
+        max-width: 518px;
+        width: 100%;
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+      
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__txt {
+        max-width: 518px;
+        width: 100%;
+
+        &--formate1 {
+            font-weight: 700;
+            font-size: 39px;
+            line-height: 110%;
+            letter-spacing: -0.045em;
+            color: #23242A;
+        }
+
+        &--formate2 {
+            font-weight: 400;
+            font-size: 19.3px;
+            line-height: 120%;
+            letter-spacing: -0.01em;
+            color: #23242A;
+        }
+
+        &--formate3 {
+            color: #0E6FFF;
+        }
+    }
+}
