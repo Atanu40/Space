@@ -1,0 +1,52 @@
+//section 06//
+
+.section-06 {
+    @include absCenter(86px, auto, 0px, auto);
+    padding: 30px 0px;
+}
+
+.section6-container {
+    background-color: #23242A;
+    position: relative;
+    border-radius: 2px;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 12px;
+
+    &__inner__txt {
+        max-width: 574px;
+
+        &--formate1 {
+            font-weight: 500;
+            font-size: 44px;
+            line-height: 110%;
+            letter-spacing: -0.03em;
+            color: #FFFFFF;
+            margin: 0px;
+        }
+
+        &--formate2 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+            background-color: #23242A;
+        }
+    }
+
+    &__inner__btn {
+        position: relative;
+
+        &-formate {
+            position: absolute;
+            top: -73px;
+            left: 74px;
+            height: 463%;
+            width: 102%;
+            z-index: 0;
+        }
+    }
+}

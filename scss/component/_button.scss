@@ -10,11 +10,23 @@
     cursor: pointer;
 }
 
+
 .btn--red{
     color: $btn-txt-color;
     background-color: $btn-primary-color;
     margin: 0px auto;
     transition: all 1s ease-in-out;
+    &:hover{
+        background-color: $btn-txt-color;
+        color: $btn-primary-color;
+    }
+}
+
+.btn--orange{
+    color: $btn-txt-color;
+    background-color: $btn-primary-color;
+    transition: all 1s ease-in-out;
+    position: relative;
     &:hover{
         background-color: $btn-txt-color;
         color: $btn-primary-color;
