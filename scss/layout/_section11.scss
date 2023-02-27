@@ -2,12 +2,30 @@
 .section-11 {
     @include absCenter(196px, auto, 0px, auto);
     padding: 30px 0px;
+
+    @include respond(tab-port) {
+        @include absCenter(6px, auto, 0px, auto);
+        padding: 3px 0px;
+    }
+
+    @include respond(phone) {
+        @include absCenter(6px, auto, 0px, auto);
+    }
 }
 
 .section11-container {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 6px;
+
+    @include respond(tab-port) {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+    @include respond(phone) {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
 }
 
 .section11-container__left {
@@ -15,12 +33,30 @@
     grid-template-rows: 1fr 1fr;
     max-height: 215px;
     gap: 39px;
+
+    @include respond(tab-port) {
+        max-height: 100%;
+        gap: 29px;
+        align-items: center;
+        justify-items: center;
+    }
+    @include respond(phone) {
+        max-height: 100%;
+        gap: 29px;
+        align-items: center;
+        justify-items: center;
+    }
 }
 
 
 .section11-container__left__p1 {
     display: flex;
     flex-direction: column;
+
+    @include respond(phone) {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .section11-container__left__p1--f1 {
@@ -31,6 +67,11 @@
     color: #23242A;
     margin-top: 0px;
     margin-bottom: 15px;
+
+    @include respond(phone) {
+        font-size: 39px;
+        margin-bottom: 0px;
+    }
 }
 
 .section11-container__left__p1--f2 {
@@ -40,19 +81,45 @@
     letter-spacing: -0.01em;
     color: #23242A;
     max-width: 574px;
+
+    @include respond(phone) {
+        max-width: 408px;
+        text-align: center;
+        margin-top: 37px;
+    }
 }
 
-.section11-container__left__p2--formate{
+.section11-container__left__p2--formate {
     max-width: 574px;
     width: 100%;
+
+    @include respond(phone) {
+        max-width: 408px;
+    }
+    @include respond(mini-phone) {
+        max-width: 405px;
+    }
 }
 
-.section11-container__right{
+.section11-container__right {
     display: flex;
     flex-direction: column;
+
+    @include respond(tab-port) {
+        align-items: center;
+        justify-content: center;
+    }
+    @include respond(phone) {
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-.section11-container__right--formate{
+.section11-container__right--formate {
     max-height: 786px;
     height: 100%;
+
+    @include respond(mini-phone) {
+        max-width: 390px;
+    }
 }

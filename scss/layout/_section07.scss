@@ -2,12 +2,36 @@
 .section-07 {
     @include absCenter(156px, auto, 0px, auto);
     padding: 30px 0px;
+
+    @include respond(tab-port) {
+        @include absCenter(25px, auto, 0px, auto);
+        padding: 3px 0px;
+    }
+
+    @include respond(phone) {
+        @include absCenter(5px, auto, 0px, auto);
+    }
 }
 
 .secttion07-containter01 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        gap: 24px;
+        max-width: 503px;
+        margin: 0px auto;
+    }
+
+    @include respond(phone) {
+        flex-direction: column;
+        gap: 24px;
+        max-width: 403px;
+        margin: 0px auto;
+    }
 }
 
 .secttion07-containter01--formate {
@@ -35,13 +59,54 @@
     color: #0E6FFF;
 }
 
-.secttion07-containter02{
+.secttion07-containter02 {
     display: flex;
     gap: 35px;
     margin-top: 57px;
+
+
+    @include respond(medium-desktop) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    @include respond(small-desktop) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    @include respond(too-small-desktop) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    @include respond(tab-port) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    @include respond(mini-tab-port) {
+        display: grid;
+        grid-template-columns: 1fr ;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    @include respond(phone) {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
 }
 
-.card-new{
+.card-new {
     display: flex;
     flex-direction: column;
     border-radius: 12px;
@@ -49,14 +114,18 @@
     box-shadow: 10px 10px 50px 3px rgba(39, 92, 141, 0.1);
     max-width: 310px;
     width: 100%;
+
+    @include respond(phone) {
+        max-width: 390px;
+    }
 }
 
-.card__top{
+.card__top {
     min-height: 250px;
     padding: 20px 29px 16px 22px;
 }
 
-.card__footer--new-formate{
+.card__footer--new-formate {
     margin: 15px 20px;
     font-weight: 600;
     font-size: 20px;
@@ -70,7 +139,8 @@
         cursor: pointer;
     }
 }
-.card__line--formate{
+
+.card__line--formate {
     width: 310px;
-    background: #E5E5E5; 
+    background: #E5E5E5;
 }

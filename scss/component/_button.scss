@@ -8,14 +8,18 @@
     padding: 13px 30px;
     border-radius: 6px;
     cursor: pointer;
-}
 
+    @include respond(phone) {
+       padding: 7px 18px;
+       font-size: 18px;
+    }
+}
 
 .btn--red{
     color: $btn-txt-color;
     background-color: $btn-primary-color;
     margin: 0px auto;
-    transition: all 1s ease-in-out;
+    transition: all 0.3s ease-in-out;
     &:hover{
         background-color: $btn-txt-color;
         color: $btn-primary-color;
@@ -25,7 +29,7 @@
 .btn--orange{
     color: $btn-txt-color;
     background-color: $btn-primary-color;
-    transition: all 1s ease-in-out;
+    transition: all 0.3s ease-in-out;
     position: relative;
     &:hover{
         background-color: $btn-txt-color;
@@ -33,5 +37,9 @@
     }
 }
 
-
-
+.btn--blue{
+    color: $btn-txt-color;
+    background-color: $btn-secondary-color;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}

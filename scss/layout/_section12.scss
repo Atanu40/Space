@@ -4,6 +4,15 @@
 .section-12 {
     @include absCenter(146px, auto, 0px, auto);
     padding: 30px 0px;
+
+    @include respond(tab-port) {
+        @include absCenter(6px, auto, 0px, auto);
+        padding: 3px 0px;
+    }
+
+    @include respond(phone) {
+        @include absCenter(6px, auto, 0px, auto);
+    }
 }
 
 .section12-container {
@@ -11,6 +20,10 @@
     flex-direction: column;
     margin: 0px auto;
     max-width: 665px;
+
+    @include respond(phone) {
+        max-width: 408px;
+    }
 }
 
 .section12-container--f1 {

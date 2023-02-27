@@ -3,3 +3,44 @@
     width: 100%;
     margin: $top $right $bottom $left;
 }
+
+// RESPONSIVE CSS FOR MOBILE , TABLET AND DESKTOP //
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == large-desktop {
+        @media only screen and (max-width: 1140px) { @content };    
+    }
+
+    @if $breakpoint == medium-desktop {
+        @media only screen and (max-width: 997px) { @content };    
+    }
+
+    @if $breakpoint == small-desktop {
+        @media only screen and (max-width: 987px) { @content };    
+    }
+    @if $breakpoint == too-small-desktop {
+        @media only screen and (max-width: 807px) { @content };    
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 768PX) { @content };    
+    }
+
+    @if $breakpoint == mini-tab-port {
+        @media only screen and (max-width: 680PX) { @content };    
+    }
+
+    @if $breakpoint == medium-phone {
+        @media only screen and (max-width: 515PX) { @content };    
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 496PX) { @content };    
+    }
+
+    @if $breakpoint == mini-phone {
+        @media only screen and (max-width: 424PX) { @content };    
+    }
+    
+}

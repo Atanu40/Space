@@ -3,6 +3,14 @@
 .section-06 {
     @include absCenter(86px, auto, 0px, auto);
     padding: 30px 0px;
+
+     @include respond(tab-port) {
+        @include absCenter(6px, auto, 0px, auto);  
+    }
+
+    @include respond(phone) {
+        @include absCenter(1px, auto, 0px, auto);
+    }
 }
 
 .section6-container {
@@ -15,8 +23,20 @@
     align-items: flex-start;
     border-radius: 12px;
 
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
+
     &__inner__txt {
         max-width: 574px;
+
+        @include respond(phone) {
+            max-width: 403px;
+        }
 
         &--formate1 {
             font-weight: 500;
@@ -25,6 +45,10 @@
             letter-spacing: -0.03em;
             color: #FFFFFF;
             margin: 0px;
+
+            @include respond(phone) {
+                font-size: 38px;
+            }
         }
 
         &--formate2 {
@@ -47,6 +71,22 @@
             height: 463%;
             width: 102%;
             z-index: 0;
+
+            @include respond(phone) {
+                top: -287px;
+                left: 254px;
+            }
         }
+    }
+}
+
+.section6-container__inner__img {
+
+    @include respond(tab-port) {
+        display: none;
+    }
+
+    @include respond(phone) {
+        display: none;
     }
 }

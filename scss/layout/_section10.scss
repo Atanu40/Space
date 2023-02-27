@@ -3,19 +3,45 @@
 .section-10 {
     @include absCenter(96px, auto, 0px, auto);
     padding: 30px 0px;
+
+    @include respond(tab-port) {
+        @include absCenter(26px, auto, 0px, auto);
+        padding: 3px 0px;
+    }
+
+    @include respond(phone) {
+        @include absCenter(6px, auto, 0px, auto);
+    }
 }
 
 .section10-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 27px;
+
+    @include respond(tab-port) {
+        grid-template-columns: 1fr;
+    }
+
+    @include respond(phone) {
+        grid-template-columns: 1fr;
+    }
 }
 
-.section10-container__img{
+.section10-container__img {
     max-height: 411px;
     height: 100%;
     max-width: 686px;
     width: 100%;
+
+    @include respond(tab-port) {
+        max-width: 586px;
+        max-height: 511px;
+    }
+
+    @include respond(phone) {
+        max-width: 406px;
+    }
 }
 
 .section10-container__right {
@@ -23,11 +49,29 @@
     grid-template-rows: 1fr 1fr;
     gap: 36px;
     align-items: end;
+
+    @include respond(phone) {
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
 }
 
-.section10-container__left{
+.section10-container__left {
     display: flex;
     padding-top: 107px;
+
+
+    @include respond(tab-port) {
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include respond(phone) {
+        padding-top: 57px;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .section10-container__right__p1 {
@@ -36,6 +80,12 @@
     display: flex;
     flex-direction: column;
     row-gap: 19px;
+
+    @include respond(phone) {
+        align-items: center;
+        justify-content: center;
+        max-width: 408px;
+    }
 }
 
 .section10-container__right__p1--formate1 {
@@ -45,6 +95,10 @@
     letter-spacing: -0.045em;
     color: #23242A;
     margin: 0px;
+
+    @include respond(phone) {
+        font-size: 40px;
+    }
 }
 
 .section10-container__right__p1--formate2 {
@@ -58,4 +112,11 @@
 .section10-container__right--imgf {
     max-width: 794px;
     width: 100%;
+
+    @include respond(tab-port) {
+        max-width: 687px;
+    }
+    @include respond(phone) {
+        max-width: 408px;
+    }
 }

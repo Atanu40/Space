@@ -6,20 +6,52 @@
     position: relative;
     z-index: 2;
     margin-top: -74px;
-
-    // max-width: 989px;
-    // width: 100%;
-    // margin: -74px auto 0px auto;
     @include absCenter(-74px, auto, 0px, auto);
+
+
+    @include respond(too-small-desktop) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    @include respond(tab-port) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 10px;
+    }
+   
+    @include respond(mini-tab-port) {
+        display: grid;
+        grid-template-columns: 1fr ;
+        justify-items: center;
+        gap: 10px;
+    }
+
+
+    @include respond(phone) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
 .arrow {
     display: flex;
     padding-top: 50px;
-    // max-width: 989px;
-    // width: 100%;
-    // margin: 0px auto 0px auto;
     @include absCenter(0px, auto, 0px, auto);
+
+    @include respond(phone) {
+        display: none;
+    }
+
+    @include respond(tab-port) {
+        display: none;
+    }
 
     &-left:hover {
         cursor: pointer;
@@ -28,7 +60,7 @@
 
     &-right {
         margin-left: 25px;
-        
+
         &:hover {
             cursor: pointer;
             background-color: #0E6FFF;

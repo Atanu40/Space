@@ -3,6 +3,14 @@
 .section-08 {
     @include absCenter(86px, auto, 0px, auto);
     padding: 30px 0px;
+
+    @include respond(tab-port) {
+        @include absCenter(6px, auto, 0px, auto);
+    }
+
+    @include respond(phone) {
+        @include absCenter(16px, auto, 0px, auto);
+    }
 }
 
 .section08-container {
@@ -10,6 +18,16 @@
     flex-direction: column;
     margin: 0px auto;
     max-width: 640px;
+
+    @include respond(tab-port) {
+        align-items: center;
+        max-width: 508px;
+    }
+
+    @include respond(phone) {
+        align-items: center;
+        max-width: 408px;
+    }
 }
 
 .section08-container--formate1 {
@@ -19,6 +37,10 @@
     letter-spacing: -0.045em;
     color: #23242A;
     margin-bottom: 23px;
+
+    @include respond(phone) {
+        font-size: 42px;
+    }
 }
 
 .section08-container--formate2 {
@@ -34,4 +56,8 @@
     max-width: 1016px;
     width: 100%;
     object-fit: cover;
+
+    @include respond(phone) {
+        margin-top: 20px;
+    }
 }

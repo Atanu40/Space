@@ -1,8 +1,18 @@
 //section 04
 
-.section-04{
+.section-04 {
     @include absCenter(43px, auto, 0px, auto);
     padding: 30px 0px;
+
+    @include respond(tab-port) {
+        @include absCenter(3px, auto, 0px, auto);
+        padding: 0px 0px;
+    }
+
+    @include respond(phone) {
+        @include absCenter(3px, auto, 0px, auto);
+        padding: 13px 0px;
+    }
 }
 
 .section4-container {
@@ -13,10 +23,17 @@
     padding: 55px 0px;
     margin: 21px 0px;
 
-    // max-width: 989px;
-    // width: 100%;
-    // margin: 0px auto;
-   
+    @include respond(too-small-desktop) {
+        flex-direction: column;
+    }
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
 
     &__img {
         max-height: 544px;
@@ -24,16 +41,19 @@
         max-width: 518px;
         width: 100%;
         border-radius: 10px;
-        transition: all 0.5s ease-in-out;
-      
-        &:hover {
-            transform: scale(1.1);
+
+        @include respond(phone) {
+            max-width: 403px;
         }
     }
 
     &__txt {
         max-width: 518px;
         width: 100%;
+
+        @include respond(phone) {
+            max-width: 403px;
+        }
 
         &--formate1 {
             font-weight: 700;
