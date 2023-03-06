@@ -4,13 +4,45 @@
     margin-top: 146px;
     padding: 30px 0px;
 
-    @include respond(tab-port) {
-        margin-top: 36px;
-        padding: 3px 0px;
+    // @include respond(tab-port) {
+    //     margin-top: 36px;
+    //     padding: 3px 0px;
+    // }
+
+    // @include respond(phone) {
+    //     margin-top: 6px;
+    // }
+
+    @media screen and (max-width: 1060px) {
+        max-width: 906px;
+        margin: 25px auto 0px auto;
     }
 
-    @include respond(phone) {
-        margin-top: 6px;
+    @media screen and (max-width: 960px) {
+        max-width: 855px;
+        margin: 40px auto 0px auto;
+    }
+
+    @media only screen and (max-width: 890px){
+        max-width: 744px;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 840px) {
+        max-width: 680px;
+        margin: 0px auto 0px auto;
+    }
+
+    @media screen and (max-width: 700px) {
+        max-width: 501px;
+        margin: 72px auto 0px auto;
+        padding: 0px 0px;
+    }
+
+    @media screen and (max-width: 530px) {
+        max-width: 375px;
+        margin: 32px auto 0px auto;
+        padding: 0px;
     }
  }
  
@@ -21,10 +53,6 @@
  .section13-container__img{
      width: 100%;
      height: 50%;
-
-        @include respond(phone) {
-            height: 38vh;
-        }
  }
  
  .section-13__arrow{

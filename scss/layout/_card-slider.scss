@@ -1,43 +1,127 @@
 //card//
 .card-slider {
     display: flex;
-    gap: 38px;
+    gap: 26px;
     justify-content: center;
     position: relative;
     z-index: 2;
     margin-top: -74px;
-    @include absCenter(-74px, auto, 0px, auto);
+    @include absCenter(-57px, auto, 0px, auto);
+    padding: 0px 20px;
+    // large-desktop max-width: 1140px
 
+    // medium-desktop max-width: 997px
 
-    @include respond(too-small-desktop) {
+    // small-desktop max-width: 987px
+
+    // @include respond(small-desktop) {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+    //     justify-items: center;
+    //     gap: 10px;
+    // }
+
+    // @media screen and (max-width: 887px) {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+    //     justify-items: center;
+    //     gap: 10px;
+    // }
+
+    // // too-small-desktop max-width: 807px
+    // @include respond(too-small-desktop) {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+    //     justify-items: center;
+    //     gap: 10px;
+    // }
+
+    // // tab-port max-width: 768PX
+
+    // @include respond(tab-port) {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+    //     justify-items: center;
+    //     gap: 10px;
+    // }
+
+    // @media screen and (max-width: 700px) {
+    //     display: grid;
+    //     grid-template-columns: 1fr;
+    //     justify-items: center;
+    //     gap: 10px;
+    //     margin: 8px auto 0px auto;
+    // }
+    // // mini-tab-port max-width: 680PX
+
+    // @include respond(mini-tab-port) {
+    //     display: grid;
+    //     grid-template-columns: 1fr;
+    //     justify-items: center;
+    //     gap: 10px;
+    //     margin: 8px auto 0px auto;
+    // }
+
+    // // medium-phone max-width: 515PX
+    // @include respond(medium-phone) {
+    //     display: grid;
+    //     grid-template-columns: 1fr;
+    //     justify-items: center;
+    //     gap: 10px;
+    //     margin: 8px auto 0px auto;
+    // }
+
+    // // phone max-width: 496PX
+
+    // @include respond(phone) {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     justify-content: center;
+    //     margin: -21px auto 0px auto;
+    // }
+
+    // mini-phone max-width: 424PX
+
+    // media query for 960px 
+
+    @media screen and (max-width: 1060px) {
+        // display: grid;
+        // grid-template-columns: 1fr 1fr;
+        // justify-items: center;
+        // grid-column-gap: 0px;
+        max-width: 903px;
+    }
+
+    @media screen and (max-width: 960px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 40px;
+        max-width: 825px;
+    }
+
+    @media only screen and (max-width: 890px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         gap: 10px;
+        max-width: 744px;
+        width: 100%;
     }
 
-    @include respond(tab-port) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        gap: 10px;
-    }
-   
-    @include respond(mini-tab-port) {
-        display: grid;
-        grid-template-columns: 1fr ;
-        justify-items: center;
-        gap: 10px;
-    }
+    @media screen and (max-width: 840px) {
+        grid-template-columns: 1fr;
+        margin: -21px auto 0px auto;
+        padding: 0px;
 
-
-    @include respond(phone) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
+    @media screen and (max-width: 530px) {
+        grid-template-columns: 1fr;
+        margin: -21px auto 0px auto;
+        padding: 0px;
 
+    }
 }
 
 .arrow {
@@ -45,7 +129,11 @@
     padding-top: 50px;
     @include absCenter(0px, auto, 0px, auto);
 
-    @include respond(phone) {
+    @include respond(large-desktop) {
+        display: none;
+    }
+
+    @include respond(small-desktop) {
         display: none;
     }
 

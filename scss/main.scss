@@ -3,6 +3,7 @@
 @import "component/_button.scss";
 @import "component/_card.scss";
 @import "layout/_header.scss";
+@import "layout/small-header.scss";
 @import "layout/_hero.scss";
 @import "layout/_card-slider.scss";
 @import "layout/_section03.scss";
@@ -29,75 +30,55 @@ body {
   font-family: 'Inter';
   font-style: normal;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  // max-width: 1420px;
+  // margin: auto;
+  // padding-inline: 5%;
 }
 
-.small-header{
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-
-  background-color: $header-hero-bg;
-  cursor: pointer;
-  position: relative;  
-}
-
-.nav-content__link {
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-}
-
-/*--------------------------------------*/
-/* Acts as btn & contains hamburger     */
-/*--------------------------------------*/
-
-.menu-toggle {
-  padding: 1em;
-  position: absolute;
-  top: 0.7em;
-  right: 1em;
-  cursor: pointer;
-}
-
-.nav-list-open{
-  height: auto;
-}
-
-/*--------------------------------------*/
-/*   Styles the hamburger for btn       */
-/*--------------------------------------*/
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  content:'';
-  display: block;
-  background: #00b3b3;
-  height: 3px;
-  width: 1.75em;
-  border-radius: 2px;
-  transition: all ease-in-out 500ms;
-}
-
-/*--------------------------------------*/
-/* Instance of hamburger (top line)     */
-/*--------------------------------------*/
-
-.hamburger::before {
-  transform: translateY(-7px);
-}
-
-/*--------------------------------------*/
-/* Instance of hamburger bottom line    */
-/*--------------------------------------*/
-
-.hamburger::after {
-  transform: translateY(4px);
-}
+// .title{
 
 
+//   &__hero{
+//     font-family: 'Nunito Sans';
+//     font-style: normal;
+//     font-weight: 800;
+//     font-size: 48px;
+//     line-height: 130%;
+//     letter-spacing: -0.02em;
+//     color: #FFFFFF;
+//     margin-bottom: 20px;
 
+//     @media only screen and (max-width: 768px) {
+//       font-size: 36px;
+//     }
+//   }
 
+//   &__section{
+//     font-family: 'Nunito Sans';
+//     @media only screen and (max-width: 768px) {
+//       font-size: 36px;
+//     }
+//   }
 
+// }
 
+// .text{
 
+//   &__body{
+
+//   }
+
+//   &__card{}
+
+// }
+
+// .btn{
+//   &__primary{
+//     @include btn-primary;
+//   }
+
+//   &___secondary{
+//     @include btn-secondary;
+//   }
+// }

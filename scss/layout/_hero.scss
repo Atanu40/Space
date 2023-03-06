@@ -3,23 +3,56 @@
 .hero-section {
   background-color: $header-hero-bg;
   position: relative;
-  height: 74vh;
+  height: 85vh;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(small-desktop) {
+    height: 65vh;
+  }
+
+  @include respond(mini-tab-port) {
+    height: 55vh;
+  }
+  @include respond(medium-phone) {
+    height: 40vh;
+  }
   @include respond(phone) {
-    height: 64vh;
+    height: 50vh;
+  }
+  @include respond(mini-phone) {
+    height: 41vh;
   }
 
   &__content {
-    position: absolute;
-    top: 43%;
-    left: 42%;
-    transform: translate(-35%, -50%);
-    display: flex;
-    flex-direction: column;
+    // position: absolute;
+    // top: 43%;
+    // left: 31%;
+    // transform: translate(-13%, -50%);
+    // text-align: center;
+
+    // @include respond(tab-port) {
+    //   left: 23%;
+    //   transform: translate(-13%, -50%);
+    // }
+
+    text-align: center;
+    max-width: 997px;
+    padding: 0px 20px;
+    
+
+    @include respond(mini-phone) {
+      margin-top: -30px;  
+    }
 
     &--t1 {
+      margin-top: 8px;
+      margin-bottom: 14px;
       font-weight: 500;
-      font-size: 19px;
+      font-size: 20px;
       line-height: 120%;
       letter-spacing: 0.11em;
       text-transform: uppercase;
@@ -28,20 +61,36 @@
     }
 
     &--t2 {
-      font-weight: 600;
-      font-size: 50px;
+      font-weight: 700;
+      font-size: 65.5px;
       line-height: 110%;
       letter-spacing: -0.045em;
       text-align: center;
       color: #FFFFFF;
       margin-top: 1px;
 
+      @include respond(small-desktop) {
+        font-size: 53.5px;
+      }
+      @include respond(too-small-desktop) {
+        font-size: 46.5px;
+      }
+
+      @include respond(tab-port) {
+        font-size: 46.5px;
+      }
+
+      @include respond(medium-phone) {
+        font-size: 36px;
+    }
+
       @include respond(phone) {
         font-size: 40px;
       }
 
       @include respond(mini-phone) {
-        font-size: 30px;
+        font-size: 32px;
+        
       }
     }
   }

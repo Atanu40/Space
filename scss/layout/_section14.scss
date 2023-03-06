@@ -3,11 +3,48 @@
 .section-14 {
     @include absCenter(96px, auto, 0px, auto);
     padding: 30px 0px;
-    @include respond(tab-port) {
-        @include absCenter(6px, auto, 0px, auto);
+    // @include respond(tab-port) {
+    //     @include absCenter(6px, auto, 0px, auto);
+    // }
+    // @include respond(phone) {
+    //     @include absCenter(6px, auto, 0px, auto);
+    // }
+
+    @media screen and (max-width: 1060px) {
+        max-width: 906px;
+        margin: 40px auto 0px auto;
     }
-    @include respond(phone) {
-        @include absCenter(6px, auto, 0px, auto);
+
+    @media screen and (max-width: 1060px) {
+        max-width: 906px;
+        margin: 40px auto 0px auto;
+    }
+
+    @media screen and (max-width: 960px) {
+        max-width: 855px;
+        margin: 40px auto 0px auto;
+    }
+
+    @media only screen and (max-width: 890px){
+        max-width: 744px;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 840px) {
+        max-width: 680px;
+        margin: 0px auto 0px auto;
+    }
+
+    @media screen and (max-width: 700px) {
+        max-width: 501px;
+        margin: 32px auto 0px auto;
+        padding: 0px 0px;
+    }
+
+    @media screen and (max-width: 530px) {
+        max-width: 375px;
+        margin: 32px auto 0px auto;
+        padding: 0px;
     }
 }
 
@@ -16,26 +53,28 @@
     flex-direction: column;
     margin: 0px auto;
     max-width: 665px;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
 
-    @include respond(phone) {
-        max-width: 408px;
-    }
 }
 
 .section14-container__header--head {
     font-weight: 700;
     font-size: 54px;
     line-height: 110%;
-    text-align: center;
+     text-align: center;
     letter-spacing: -0.045em;
     color: #23242A;
     margin-bottom: 20px;
 
-    @include respond(phone) {
-        font-size: 48px;
+    @media screen and (max-width: 700px) {
+        font-size: 37px;
     }
+
+    @media screen and (max-width: 530px) {
+        font-size: 34px;
+    }
+
 }
 
 .section14-container__header--para {
@@ -45,6 +84,16 @@
     text-align: center;
     letter-spacing: -0.01em;
     color: #23242A;
+
+    @media screen and (max-width: 700px) {
+        text-align: start;
+        font-size: 20.3px;
+    }
+
+    @media screen and (max-width: 530px) {
+        text-align: start;
+        font-size: 20.3px;
+    }
 }
 
 .section14-container__title {
@@ -54,15 +103,7 @@
     margin-top: 72px;
 
 
-    @include respond(medium-desktop) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        align-items: center;
-        gap: 0px;
-        margin-top: 40px;
-    }
-    @include respond(small-desktop) {
+    @media screen and (max-width: 1257px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
@@ -71,7 +112,7 @@
         margin-top: 40px;
     }
 
-    @include respond(too-small-desktop) {
+    @media screen and (max-width: 1060px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
@@ -80,7 +121,7 @@
         margin-top: 40px;
     }
 
-    @include respond(tab-port) {
+    @media screen and (max-width: 960px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
@@ -88,21 +129,33 @@
         gap: 0px;
         margin-top: 40px;
     }
-
-    @include respond(medium-phone) {
-        grid-template-columns: 1fr;
-    }
-
-    @include respond(phone) {
+    @media screen and (max-width: 840px){
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         align-items: center;
-        gap: 0px;
+        gap: 10px;
         margin-top: 40px;
     }
 
-   
+    @media screen and (max-width: 700px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 19px;
+        margin-top: 40px;
+    }
+
+    @media screen and (max-width: 530px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        margin-top: 40px;
+    }
 }
 
 .section14-container__subtitle {
@@ -110,7 +163,27 @@
     flex-direction: column;
     max-width: 250px;
     
-    @include respond(phone) {
+    @media screen and (max-width: 1257px) {
+        max-width: 1250px;
+    }
+
+    @media screen and (max-width: 1060px) {
+        max-width: 906px;
+    }
+
+    @media screen and (max-width: 960px) {
+        max-width: 855px;
+    }
+
+    @media screen and (max-width: 840px) {
+        max-width: 680px;
+    }
+
+    @media screen and (max-width: 700px) {
+        max-width: 242px;
+    }
+
+    @media screen and (max-width: 530px) {
         max-width: 178px;
     }
 }
@@ -130,6 +203,14 @@
     letter-spacing: -0.03em;
     color: #23242A;
     margin-bottom: 5px;
+
+    @media screen and (max-width: 700px) {
+        font-size: 22px;
+    }
+
+    @media screen and (max-width: 530px) {
+        font-size: 22px;
+    }
 }
 
 .section14-container__subtitle__txt--f2 {

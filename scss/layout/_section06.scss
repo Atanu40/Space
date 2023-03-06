@@ -4,12 +4,46 @@
     @include absCenter(86px, auto, 0px, auto);
     padding: 30px 0px;
 
-     @include respond(tab-port) {
-        @include absCenter(6px, auto, 0px, auto);  
+    //  @include respond(small-desktop) {
+    //     @include absCenter(6px, auto, 0px, auto);  
+    // }
+
+    // @include respond(phone) {
+    //     @include absCenter(1px, auto, 0px, auto);
+    // }
+
+    @media screen and (max-width: 1060px) {
+        max-width: 906px;
+        margin: 25px auto 0px auto;
+    }
+    
+    @media screen and (max-width: 960px) {
+        max-width: 855px;
+        margin: 25px auto 0px auto;
     }
 
-    @include respond(phone) {
-        @include absCenter(1px, auto, 0px, auto);
+    @media only screen and (max-width: 890px){
+        max-width: 744px;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 840px) {
+        max-width: 680px;
+        margin: 0px auto 0px auto;
+        margin: 32px auto 0px auto;
+        padding: 0px;
+    }
+
+    @media screen and (max-width: 700px) {
+        max-width: 501px;
+        margin: 32px auto 0px auto;
+        padding: 0px;
+    }
+
+    @media screen and (max-width: 530px) {
+        max-width: 375px;
+        margin: 32px auto 0px auto;
+        padding: 0px;
     }
 }
 
@@ -23,19 +57,54 @@
     align-items: flex-start;
     border-radius: 12px;
 
-    @include respond(tab-port) {
+    // @include respond(small-desktop) {
+    //     flex-direction: column;
+    // }
+
+    // @include respond(tab-port) {
+    //     flex-direction: column;
+    // }
+
+    // @include respond(phone) {
+    //     flex-direction: column;
+    // }
+
+    @media screen and (max-width: 1060px) {
         flex-direction: column;
+        max-width: 906px;
+        margin: 0px auto;
+      }
+    @media screen and (max-width: 960px) {
+        flex-direction: column;
+        max-width: 725px;
+        margin: 0px auto;
     }
 
-    @include respond(phone) {
+    @media screen and (max-width: 840px) {
         flex-direction: column;
+        max-width: 520px;
+        margin: 0px auto;
+    }
+
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+        max-width: 320px;
+        margin: 0px auto;
+    }
+
+    @media screen and (max-width: 530px) {
+        flex-direction: column;
+        max-width: 261px;
+        margin: 0px auto;
+        padding: 60px;
+        gap: 10px;
     }
 
     &__inner__txt {
         max-width: 574px;
-
-        @include respond(phone) {
-            max-width: 403px;
+        
+        @media screen and (max-width: 700px) {
+            max-width: 774px;
         }
 
         &--formate1 {
@@ -46,8 +115,21 @@
             color: #FFFFFF;
             margin: 0px;
 
-            @include respond(phone) {
-                font-size: 38px;
+            @media screen and (max-width: 960px) {
+                font-size: 32px;
+            }
+        
+            @media screen and (max-width: 840px) {
+                font-size: 32px;
+            }
+        
+            @media screen and (max-width: 700px) {
+                font-size: 32px;
+                max-width: 774px;
+            }
+
+            @media screen and (max-width: 530px) {
+                font-size: 32px;
             }
         }
 
@@ -58,34 +140,43 @@
             letter-spacing: -0.02em;
             color: #FFFFFF;
             background-color: #23242A;
+            @media screen and (max-width: 530px) {
+                font-size: 16px;
+                font-weight: 500;
+            }
         }
     }
 
     &__inner__btn {
         position: relative;
 
-        &-formate {
+        @media screen and (max-width: 1060px) {
+            margin-top: 15px;
+        }
+        .section6-container__inner__img {
             position: absolute;
             top: -73px;
             left: 74px;
             height: 463%;
             width: 102%;
             z-index: 0;
-
-            @include respond(phone) {
-                top: -287px;
-                left: 254px;
-            }
         }
     }
 }
 
 .section6-container__inner__img {
 
-    @include respond(tab-port) {
+    @media screen and (max-width: 1060px) {
+       display: none;
+    }
+    @include respond(small-desktop) {
         display: none;
     }
 
+    @include respond(tab-port) {
+        display: none;
+    }
+   
     @include respond(phone) {
         display: none;
     }

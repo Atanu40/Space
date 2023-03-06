@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./scss/main.scss">
 </head>
 
-<body>
+<body id="my-scrollbar">
   <header class="header-part">
     <nav class="nav-content">
       <div class="nav-content__logo">
@@ -45,39 +45,24 @@
   </header>
 
   <section class="small-header">
-    <nav class="nav-content">
+    <nav class="nav-content__small">
       <div class="nav-content__logo">
         <img src="./img/Space.png" alt="logo">
       </div>
-      <div class="nav-content__link nav-list-open">
-
-        <div class="nav-list">
-          <ul class="nav-list__ul">
-            <li class="nav-list__ul__li">
-              <a class="nav-list__ul__li--formate" href="#">Home</a>
-            </li>
-            <li class="nav-list__ul__li">
-              <a class="nav-list__ul__li--formate" href="#">Templates</a>
-            </li>
-            <li class="nav-list__ul__li">
-              <a class="nav-list__ul__li--formate" href="#">Price</a>
-            </li>
-            <li class="nav-list__ul__li">
-              <a class="nav-list__ul__li--formate" href="#">Help</a>
-            </li>
-            <li class="nav-list__ul__li">
-              <a class="nav-list__ul__li--formate nav-button__btn" href="#">Get In Touch</a>
-            </li>
-          </ul>
+      <div class="mobile-nav">
+        <div class="nav-content__logo mobile-nav__img">
+          <img src="./img/Space.png" alt="logo">
         </div>
-
-        <!-- <button class="nav-button__btn" type="submit">Get In Touch</button> -->
-
+        <a href="/">Home</a>
+        <a href="/">Templates</a>
+        <a href="/">Price</a>
+        <a href="/">Help</a>
+        <a class="nav-list__ul__li--formate nav-button__btn" href="/">Get In Touch</a>
       </div>
 
-      <div class="menu-toggle open">
-        <div class="hamburger"></div>
-      </div>
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
     </nav>
   </section>
   <main>
@@ -85,7 +70,7 @@
     <section class="hero-section">
       <div class="hero-section__content">
         <h5 class="hero-section__content--t1">Lorem ipsum dolor</h5>
-        <h1 class="hero-section__content--t2">Lorem ipsum dolor sit amet, <br>
+        <h1 class="hero-section__content--t2">Lorem ipsum dolor sit amet,
           consectetur adipiscing elit</h1>
         <a class="btn btn--red" href="#">Get In Touch</a>
       </div>
@@ -156,8 +141,8 @@
         <img class="section4-container__img" src="./img/Rectangle_02.png" alt="">
 
         <div class="section4-container__txt">
-          <h2 class="section4-container__txt--formate1">Lorem ipsum dolor sit <br> amet, consectetur <br> adipiscing
-            elit, sed do <br> eiusmod </h2>
+          <h2 class="section4-container__txt--formate1">Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod </h2>
           <p class="section4-container__txt--formate2">Convallis turpis erat tempus, viverra aliquet. Nullam viverra nam
             auctor sit ipsum malesuada duis volutpat.Convallis turpis erat tempus, viverra aliquet. Nullam viverra nam
             auctor sit ipsum malesuada a, duis volutpat. </p>
@@ -190,6 +175,7 @@
                 tellus accumsan nulla nunc euismod ve semper.</p>
             </div>
           </div>
+
           <!--Part 02-->
           <div class="section5-container__lp__p2">
             <img class="section5-container__lp__p2--imgf" src="./img/Icon Artwork_1.png" alt="">
@@ -203,7 +189,9 @@
             </div>
           </div>
         </div>
+
       </div>
+
     </section>
 
     <!-- Section-06 -->
@@ -277,13 +265,17 @@
     <!-- Section-08 -->
     <section class="section-08">
       <div class="section08-container">
-        <h2 class="section08-container--formate1">Lorem ipsum dolor sit <br> amet, consectetur</h2>
-        <p class="section08-container--formate2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
-        </p>
+        <div>
+          <h2 class="section08-container--formate1">Lorem ipsum dolor sit <br> amet, consectetur</h2>
+          <p class="section08-container--formate2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <img class="section-08_img" src="./img/peter-olexa-pL7IreX9AGY-unsplash 10.png" alt="">
       </div>
-      <img class="section-08_img" src="./img/peter-olexa-pL7IreX9AGY-unsplash 10.png" alt="">
+
+      <img class="section-08_img1" src="./img/peter-olexa-pL7IreX9AGY-unsplash 10.png" alt="">
     </section>
 
     <!-- Section-09 -->
@@ -340,22 +332,21 @@
               nam auctor sit ipsum malesuada a, duis volutpat. Convallis turpis erat tempus, viverra aliquet. Nullam
               viverra nam auctor sit ipsum malesuada a, duis volutpat.</p>
           </div>
-
-          <img class="section11-container__left__p2--formate" src="./img/peter-6 10.png" alt="">
-
+          <img class="section11-container__left__img" src="./img/peter-6 10.png" alt="">
         </div>
 
         <div class="section11-container__right">
           <img class="section11-container__right--formate" src="./img/peter-7 8.png" alt="">
         </div>
+      </div>
     </section>
 
     <!-- Section-12 -->
     <section class="section-12">
       <div class="section12-container">
-        <h2 class="section12-container--f1">“Every single person comes away and says - <br> wow that's a really slick
-          experience, that was <br> so easy to use. I feel so much less stressed as <br>I now know we're doing
-          everything by the <br> book”</h2>
+        <h2 class="section12-container--f1">“Every single person comes away and says - wow that's a really slick
+          experience, that was so easy to use. I feel so much less stressed as <br>I now know we're doing
+          everything by the book”</h2>
 
         <div class="section12-container__inner">
           <img class="section12-container__inner--f1" src="./img/Ellipse 34.png" alt="">
@@ -373,8 +364,8 @@
         <img class="section13-container__img" src="./img/Body.png" alt="">
 
         <div class="section-13__arrow">
-          <svg width="29" height="29" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg">
-            <path class=".section-13__arrow__left" fill="black"
+          <svg width="28" height="29" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg">
+            <path class=".section-13__arrow__left" fill="blue"
               d="M28.1452 12.7293V16.2709H6.89521L16.6348 26.0105L14.1202 28.5251L0.0952146 14.5001L14.1202 0.475098L16.6348 2.98968L6.89521 12.7293H28.1452Z"
               fill="#23242A" />
           </svg>
@@ -440,7 +431,7 @@
         <img class="section15-container__img" src="./img/Rectangle 5.png" alt="">
 
         <div class="section15-container__txt">
-          <h2 class="section15-container__txt--fm1">Lorem ipsum <br> dolor sit amet elit, <br> sed do eiusmod </h2>
+          <h2 class="section15-container__txt--fm1">Lorem ipsum dolor sit amet elit,sed do eiusmod </h2>
           <a class="btn btn--blue" href="#">Get In Touch</a>
         </div>
       </div>

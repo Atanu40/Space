@@ -3,58 +3,118 @@
     @include absCenter(81px, auto, 0px, auto);
     padding: 30px 0px;
 
-    @include respond(tab-port) {
-        @include absCenter(3px, auto, 0px, auto);
-        padding: 0px 0px;
+    // @media screen and (max-width: 960px) {
+    //     @include absCenter(3px, auto, 0px, auto);
+    //     padding: 0px 0px;
+    // }
+
+    // @include respond(phone) {
+    //     @include absCenter(1px, auto, 0px, auto);
+    // }
+
+    @media screen and (max-width: 1060px) {
+        max-width: 906px;
+        margin: 25px auto 0px auto;
     }
-    @include respond(phone) {
-        @include absCenter(1px, auto, 0px, auto);
+    
+    @media screen and (max-width: 960px) {
+        max-width: 855px;
+        margin: 25px auto 0px auto;
+    }
+
+    @media only screen and (max-width: 890px){
+        max-width: 744px;
+        width: 100%;
+        margin: 32px auto 0px auto;
+        padding: 0px;
+    }
+
+    @media screen and (max-width: 840px) {
+        max-width: 680px;
+        margin: 0px auto 0px auto;
+    }
+
+    @media screen and (max-width: 700px) {
+        max-width: 501px;
+        margin: 32px auto 0px auto;
+        padding: 0px;
+    }
+
+    @media screen and (max-width: 530px) {
+        margin: 32px auto 0px auto;
+        padding: 0px;
     }
 }
 
 .section5-container {
-    display: flex;
-    flex-direction: column;
-    
-    @include respond(too-small-desktop) {
-        justify-content: center;
-        align-items: center;
-    }
+    // display: flex;
+    // flex-direction: column;
 
-     @include respond(tab-port) {
-        justify-content: center;
-        align-items: center;
-    }
+    // @include respond(too-small-desktop) {
+    //     justify-content: center;
+    //     align-items: center;
+    // }
 
-    @include respond(phone) {
-        justify-content: center;
-        align-items: center;
-    }
+    //  @include respond(tab-port) {
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+
+    // @include respond(phone) {
+    //     justify-content: center;
+    //     align-items: center;
+    // }
 
     &__header--formate {
-        font-weight: 600;
-        font-size: 48px;
+        font-weight: 700;
+        font-size: 42px;
         line-height: 110%;
         letter-spacing: -0.045em;
         color: #23242A;
         margin-bottom: 22px;
 
 
-         @include respond(tab-port) {
-            @include absCenter(1px, auto, 0px, auto);
-            font-size: 32px;
-            text-align: center;
+        //  @include respond(tab-port) {
+        //     @include absCenter(1px, auto, 0px, auto);
+        //     font-size: 32px;
+        //     text-align: center;
+        // }
+
+        // @include respond(phone) {
+        //     @include absCenter(1px, auto, 0px, auto);
+        //     max-width: 403px;
+        //     font-size: 32px;
+        //     text-align: center;
+        // }
+
+        @media screen and (max-width: 1060px) {
+            font-size: 40px;
+            margin: 0px;
+          }
+
+        @media screen and (max-width: 960px) {
+            max-width: 875px;
+            margin: 0px auto;
+            font-size: 39px;
         }
 
-        @include respond(phone) {
-            @include absCenter(1px, auto, 0px, auto);
-            max-width: 403px;
-            font-size: 32px;
-            text-align: center;
+        @media screen and (max-width: 840px) {
+            max-width: 625px;
+            margin: 0px auto;
         }
 
-       
-        
+        @media screen and (max-width: 700px) {
+            max-width: 488px;
+            margin: 0px auto;
+            font-size: 38px;
+        }
+
+        @media screen and (max-width: 530px) {
+            max-width: 375px;
+            margin: 0px auto;
+            font-size: 34px;
+        }
+
     }
 
     &__para--formate {
@@ -66,9 +126,24 @@
         max-width: 518px;
         width: 100%;
 
-        @include respond(phone) {
-            max-width: 403px;
-            text-align: center;
+        @media screen and (max-width: 960px) {
+            max-width: 875px;
+            margin: 26px auto;
+        }
+
+        @media screen and (max-width: 840px) {
+            max-width: 625px;
+            margin: 26px auto;
+        }
+
+        @media screen and (max-width: 700px) {
+            max-width: 488px;
+            margin: 26px auto;
+        }
+
+        @media screen and (max-width: 530px) {
+            max-width: 375px;
+            margin: 26px auto;
         }
 
         // @include respond(tab-port) {
@@ -82,37 +157,68 @@
         grid-template-columns: 1fr 1fr;
         gap: 60px;
 
-        @include respond(too-small-desktop) {
-            grid-template-columns: 1fr;
+        // @include respond(too-small-desktop) {
+        //     grid-template-columns: 1fr;
+        //     gap: 22px;
+        //     align-items: center;
+        //     justify-items: center;
+        //     margin-top: 20px;
+        // }
+
+        //  @include respond(tab-port) {
+        //     grid-template-columns: 1fr;
+        //     gap: 22px;
+        //     align-items: center;
+        //     justify-items: center;
+        //     margin-top: 20px;
+        // }
+        // @include respond(phone) {
+        //     grid-template-columns: 1fr;
+        //     gap: 22px;
+        //     align-items: center;
+        //     justify-items: center;
+        // }
+
+        @media screen and (max-width: 960px) {
+            grid-template-columns: 1fr 1fr;
             gap: 22px;
-            align-items: center;
             justify-items: center;
             margin-top: 20px;
-        }
-        
-         @include respond(tab-port) {
-            grid-template-columns: 1fr;
-            gap: 22px;
-            align-items: center;
-            justify-items: center;
-            margin-top: 20px;
-        }
-        @include respond(phone) {
-            grid-template-columns: 1fr;
-            gap: 22px;
-            align-items: center;
-            justify-items: center;
+            max-width: 875px;
+            margin: 0px auto;
         }
 
+        @media screen and (max-width: 840px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+            justify-items: center;
+            margin-top: 20px;
+            max-width: 675px;
+            margin: 0px auto;
+        }
+
+        @media screen and (max-width: 700px) {
+            grid-template-columns: 1fr;
+            gap: 22px;
+            align-items: center;
+            justify-items: center;
+            max-width: 501px;
+            margin: 0px auto;
+        }
+
+        @media screen and (max-width: 530px) {
+            grid-template-columns: 1fr;
+            gap: 22px;
+            align-items: center;
+            justify-items: center;
+            max-width: 375px;
+            margin: 0px auto;
+        }
 
         &__p1 {
             display: flex;
             gap: 28px;
 
-            @include respond(phone) {
-                gap: 18px;
-                max-width: 403px;
-            }
 
             &--imgf {
                 max-width: 40px;
@@ -136,7 +242,7 @@
 
                 &--formate2 {
                     font-weight: 400;
-                    font-size: 16.3px;
+                    font-size: 20.3px;
                     line-height: 120%;
                     letter-spacing: -0.01em;
                     color: #23242A;
@@ -174,7 +280,7 @@
 
                 &--formate2 {
                     font-weight: 400;
-                    font-size: 16.3px;
+                    font-size: 20.3px;
                     line-height: 120%;
                     letter-spacing: -0.01em;
                     color: #23242A;
